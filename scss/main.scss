@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(#0046ae, #9198e5);
+}
+
+.bigpart {
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(
+    0deg,
+    rgba(221, 233, 255, 0.65) 3%,
+    rgba(222, 234, 255, 0.5) 100%
+  );
+
+  &:hover {
+    background: linear-gradient(
+      0deg,
+      rgba(221, 233, 255, 0.65) 100%,
+      rgba(222, 234, 255, 0.5) 3%
+    );
+  }
+}
+
+.bigpart {
+  border-radius: 20px;
+  margin-left: 90vh;
+  margin-top: 15vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: larger;
+  opacity: initial;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 6px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.coverimg {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 -1px 9px 0px black;
+  }
+}
+
+.songname {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 0px 12px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.singer {
+  color: #474747;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 6px black;
+  transition: 0.5s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.buttons {
+  text-decoration: none;
+  margin-left: -35px;
+  margin-top: 10px;
+
+  li {
+    display: inline-block;
+    margin: 0 13px 0 13px;
+  }
+
+  button {
+    border: none;
+    background: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+  }
+
+  button {
+    border: 3px solid #ffffff;
+    border-right-color: #8b8b87;
+    border-bottom-color: #8b8b87;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      border: 3px solid #a1a19da6;
+      border-right-color: #000000a4;
+      border-bottom-color: #000000a4;
+      border-radius: 50%;
+    }
+  }
+}
+
+input {
+  width: 83%;
+  cursor: pointer;
+}
+
+.start {
+  color: white;
+  font-weight: bolder;
+}
+.end {
+  color: white;
+  font-weight: bolder;
+}
+.saat {
+  display: inline-block;
+  .start {
+    margin-right: 80px;
+  }
+  .end {
+    margin-left: 85px;
+  }
+}
+
+::selection{
+  background: transparent;
+  color: #0046ae;
+}
